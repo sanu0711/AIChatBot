@@ -1,0 +1,55 @@
+*{
+    padding: 5px;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 50%;
+    vertical-align: middle;
+    
+
+}
+.logorep{
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+header {
+    /* background-color: #007bff; */
+    /* color: white; */
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+    
+
+}
+.chat-input {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+}
+.input-txt {
+    width: calc(100% - 100px);
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
