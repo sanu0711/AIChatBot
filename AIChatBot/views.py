@@ -3,7 +3,7 @@ from django.http import HttpResponse
 import google.generativeai as gai
 from chatHistory.models import ChatInteraction
 def modelBot(userinput):
-    api_key='AIzaSyCnsw4EI7Hz0DrYMhqP0JklYqHm2-0O5p8'
+    api_key='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
     gai.configure(api_key=api_key)
     model=gai.GenerativeModel('gemini-pro')
     chat=model.start_chat(history=[])
