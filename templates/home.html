@@ -8,6 +8,8 @@
     <title>AIChatBot</title>
     <link rel="shortcut icon" href="{% static 'images/chatbot.jpeg' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 
 <body>
@@ -17,11 +19,12 @@
             AI ChatBot
         </h1>
     </header>
-    <div>
+    <div class="content">
         <div>
             <div class="chat-message">
                 <div class="chat-message-content">
-                    <p><img class="logorep" src="{% static 'images/chatbot.jpeg' %}" alt="logorep">Hi! I am AI ChatBot. How can I help you?</p>
+                    <p><img class="logorep" src="{% static 'images/chatbot.jpeg' %}" alt="logorep">
+                        Hi! I am AI ChatBot. How can I help you?</p>
                 </div>
             </div>
         </div>
@@ -29,12 +32,21 @@
             <p><img class="logorep" src="{% static 'images/user.jpeg' %}" alt="logorep">{{Question}}</p>
             <p> <img class="logorep" src="{% static 'images/chatbot.jpeg' %}" alt="logorep">{{Answer}}</p>
         </div>
+    </div>
         <div class="chat-input">
             <form action="" method="post">
                 {% csrf_token %}
                 <input class="input-txt" type="text" name="user-input" id="user-input" placeholder="Type a message...">
+                <input type="hidden" name="voice-input" id="voice-input">
                 <button type="submit">Send</button>
+                <button type="button" id="voice-button" class="voice-search-btn">
+                    <i class="fas fa-microphone"></i>
+                </button>
             </form>
         </div>
+    
+        <script src="{%static 'js/home.js' %}"></script>
+
 </body>
+
 </html>
